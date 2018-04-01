@@ -1,0 +1,26 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+// Add font related styles here
+body {
+  font-family: $font-primary;
+  color: $color-grey-dark-2;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.heading-primary {
+
+}
+
+.heading-secondary {
+
+}
+
+.heading-tertiary {
+
+}
+
+.paragraph {
+
+}
