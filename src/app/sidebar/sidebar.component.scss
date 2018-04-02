@@ -1,0 +1,7 @@
+@import '../../assets/scss/abstracts/variables';
+
+:host {
+  background-color: $color-primary;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1;
+}

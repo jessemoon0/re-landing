@@ -1,0 +1,6 @@
+@import '../../assets/scss/abstracts/variables';
+
+:host {
+  background-color: $color-grey-light-1;
+  grid-column: col-start 5 / full-end;
+}

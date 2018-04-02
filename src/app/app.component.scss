@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  // 40vw is in order to be smaller as width is smaller.
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  // Columns will be as most 140 px and as min the contents width.
+  // 1st col is the sidebar. The 1fr is to center the other 8 columns.
+  // For responsive, 1fr cols will shrink, leaving the 8 cols.
+  grid-template-columns:
+    [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem,1fr) [center-start]
+    repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] minmax(6rem,1fr) [full-end];
+
+  & > * {
+    // For Testing and creating the grid.
+    padding: 40px;
+    font-size: 3rem;
+  }
+}
