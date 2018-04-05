@@ -13,6 +13,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { RealtorsComponent } from './realtors/realtors.component';
 import { ReviewPicturesComponent } from './review-pictures/review-pictures.component';
 import { ReviewContentComponent } from './review-content/review-content.component';
+import { FeatureComponent } from './features/feature/feature.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ReviewContentComponent } from './review-content/review-content.componen
     SidebarComponent,
     RealtorsComponent,
     ReviewPicturesComponent,
-    ReviewContentComponent
+    ReviewContentComponent,
+    FeatureComponent
   ],
   imports: [
     BrowserModule

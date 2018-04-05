@@ -10,9 +10,9 @@
     repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
     [center-end] minmax(6rem,1fr) [full-end];
 
-  & > * {
-    // For Testing and creating the grid.
-    padding: 40px;
-    font-size: 3rem;
-  }
+  // For Testing and creating the grid.
+  //& > * {
+  //  padding: 40px;
+  //  font-size: 3rem;
+  //}
 }
