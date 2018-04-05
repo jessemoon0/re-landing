@@ -1,14 +1,13 @@
 <div class="feature">
-  <svg class="__feature-icon">
-    <use xlink:href="feature.svgIcon"
-         href="../../../assets/img/sprite.svg#icon-global">
+  <svg class="feature__icon">
+    <use [attr.xlink:href]="'../../../assets/img/sprite.svg#icon-' + svgIcon"
+         [attr.href]="'../../../assets/img/sprite.svg#icon-' + svgIcon">
     </use>
   </svg>
-  <h4 class="heading-4">
-    {{feature.title}}
+  <h4 class="heading-4 heading-4--dark">
+    {{title}}
   </h4>
   <p class="feature__text">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-    Tenetur distinctio necessitatibus pariatur voluptatibus.
+    {{text}}
   </p>
 </div>

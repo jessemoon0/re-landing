@@ -9,6 +9,11 @@
   margin: 15rem 0;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  // Non responsive columns
+  //grid-template-columns: repeat(3, 1fr);
+
+  // Responsive (no media queries) columns
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 6rem;
+  align-items: start;
 }
