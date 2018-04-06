@@ -15,7 +15,6 @@ import { ReviewPicturesComponent } from './review-pictures/review-pictures.compo
 import { ReviewContentComponent } from './review-content/review-content.component';
 import { FeatureComponent } from './features/feature/feature.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

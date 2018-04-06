@@ -1,6 +1,13 @@
 @import '../../assets/scss/abstracts/variables';
 
 :host {
-  background-color: $color-secondary;
+  //background-color: $color-secondary;
   grid-column: center-start / center-end;
+}
+
+.homes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem;
+  margin: 15rem 0;
 }

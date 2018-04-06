@@ -1,5 +1,13 @@
 <section class="homes">
-  Homes
+  <app-home *ngFor="let home of homes"
+            [isFavorite]="home.isFavorite"
+            [homeImg]="home.homeImg"
+            [homeTitle]="home.homeTitle"
+            [country]="home.country"
+            [rooms]="home.rooms"
+            [sqMeters]="home.sqMeters"
+            [price]="home.price">
+  </app-home>
 </section>
 
 <!--

@@ -1,3 +1,8 @@
 <section class="gallery">
-  Gallery
+  <figure *ngFor="let i of [1,2,3,4,5,6,7,8,9,10,11,12,13,14]" [class]="'gallery__item gallery__item--' + i">
+    <img [src]="'../../assets/img/gal-' + i + '.jpeg'"
+         [alt]="'Gallery Image ' + i"
+         class="gallery__img">
+  </figure>
+
 </section>

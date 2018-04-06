@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {IHome} from './IHome';
+import {HOME_DATA} from './home-data';
 
 @Component({
   selector: 'app-home-list',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeListComponent implements OnInit {
 
-  constructor() { }
+  homes: Array<IHome> = HOME_DATA;
 
   ngOnInit() {
   }
