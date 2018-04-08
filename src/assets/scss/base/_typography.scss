@@ -16,6 +16,9 @@ body {
 
 .heading-primary {
   @extend %heading;
+  font-size: 4.5rem;
+  color: $color-grey-light-1;
+  line-height: 1;
 }
 
 .heading-secondary {
@@ -28,7 +31,7 @@ body {
   &--dark { color: $color-grey-dark-1; }
 }
 
-.heading-tertiary {
+.heading-3 {
   @extend %heading;
   font-size: 1.6rem;
   color: $color-primary;

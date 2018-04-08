@@ -1,3 +1,5 @@
+@import '../assets/scss/abstracts/mixins';
+
 .container {
   display: grid;
   // 40vw is in order to be smaller as width is smaller.
@@ -15,4 +17,25 @@
   //  padding: 40px;
   //  font-size: 3rem;
   //}
+
+  // Add a new row and remove the 1st column (sidebar) and add a row at the top
+  // In smaller screens, the sidebar takes too much, so we put it on the top
+  // Remember to change the sidebar's grid-row and grid-column
+  @include respond(1k) {
+    grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns:
+      [full-start] minmax(6rem,1fr) [center-start]
+      repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+      [center-end] minmax(6rem,1fr) [full-end];
+  }
+  // Realtors will be a new row now
+  @include respond(800) {
+    grid-template-rows: 6rem // Sidebar
+                        calc(100vh - 6rem); // Header, now is 100% viewport
+                        // Grid Algorithm places these as implicit
+                        //min-content // Realtors
+                        //min-content // Features
+                        //min-content // Reviews: Instead of 40vw
+                        //repeat(3, min-content);
+  }
 }

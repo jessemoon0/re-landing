@@ -1,8 +1,14 @@
 @import '../../assets/scss/abstracts/variables';
+@import '../../assets/scss/abstracts/mixins';
 
 :host {
   background-color: $color-primary;
   grid-column: full-start / col-end 4;
+
+  @include respond(800) {
+    grid-column: 1 / -1;
+    grid-row: 6 / 7;
+  }
 }
 
 .story {
@@ -17,12 +23,20 @@
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
+
+    @include respond(800) {
+      padding: 6rem;
+    }
   }
   &--img-1 {
     width: 100%;
     grid-row: 2 / 6;
     grid-column: 2 / 6;
     box-shadow: 0 2rem 5rem rgba($color-black, .1);
+    @include respond(800) {
+      grid-column: 1 / 5;
+      grid-row: 1 / -1;
+    }
   }
   &--img-2 {
     width: 115%;
@@ -30,5 +44,9 @@
     grid-column: 4 / 7;
     z-index: 10;
     box-shadow: 0 2rem 5rem rgba($color-black, .2);
+    @include respond(800) {
+      grid-row: 1 / -1;
+      width: 100%;
+    }
   }
 }
